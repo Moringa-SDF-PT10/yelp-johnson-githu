@@ -52,4 +52,4 @@ pip3 install pipenv
    ```bash
    pipenv run python main.py
 
-4. After first run, a database file yelp-levy-ochieng.db will be created in your directory.
+4. After first run, a database file yelp-johnson-githu.db will be created in your directory.
