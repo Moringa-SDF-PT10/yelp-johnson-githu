@@ -10,6 +10,9 @@ class Review:
         self.id = id
         self.save()
 
+    def __repr__(self):
+        return f"Review(id={self.id}, customer={self.customer}, restaurant={self.restaurant}, rating={self.rating})"
+
     @classmethod
     def create_table(cls):
         CURSOR.execute("""

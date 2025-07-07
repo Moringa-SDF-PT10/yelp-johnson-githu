@@ -8,6 +8,9 @@ class Customer:
         self.id = id
         self.save()
 
+    def __repr__(self):
+        return f"Customer(id={self.id}, name='{self.first_name} {self.last_name}')"
+
     @classmethod
     def create_table(cls):
         CURSOR.execute("""

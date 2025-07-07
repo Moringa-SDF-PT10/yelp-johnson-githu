@@ -5,7 +5,10 @@ class Restaurant:
     def __init__(self, name, id=None):
         self._name = name
         self.id = id
-        self.save()
+        self.save()    
+
+    def __repr__(self):
+        return f"Restaurant(id={self.id}, name='{self.name}')"
 
     @classmethod
     def create_table(cls):
